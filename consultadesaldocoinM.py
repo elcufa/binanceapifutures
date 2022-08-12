@@ -1,13 +1,11 @@
 import logging
 from time import sleep
 from binance.um_futures import UMFutures
-from binance.lib.utils import config_logging
 from binance.error import ClientError
 import pandas as pd
 import msvcrt
 
 
-config_logging(logging, logging.DEBUG)
 um_futures_client = UMFutures(key='ACAVATUKEY', secret='ACAVATUSECRETKEY')
 try:
 
